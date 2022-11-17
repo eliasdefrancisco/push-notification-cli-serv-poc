@@ -5,6 +5,6 @@ self.addEventListener('push', e => {
   console.log('Push Recieved...')
   self.registration.showNotification(data.title, {
     body: 'Notified by Elaya Worker',
-    icon: 'http://image.ibb.co/frYOFd/tmlogo.png'
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUuQ8A8HjZIb481o3ppXJH4NNdGtuoYUuvQ&usqp=CAU'
   })
 })

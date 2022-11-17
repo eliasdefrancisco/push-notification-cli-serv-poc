@@ -27,8 +27,10 @@ app.post('/subscribe', (req, res) => {
   // Create payload
   const payload = JSON.stringify({ title: 'Push Test' })
 
-  // Pass object into sendNotification
-  webpush.sendNotification(subscription, payload).catch(err => console.error(err))
+  setTimeout(() => {
+    // Pass object into sendNotification
+    webpush.sendNotification(subscription, payload).catch(err => console.error(err))
+  }, 5000)
 })
 
 const port = 5000
